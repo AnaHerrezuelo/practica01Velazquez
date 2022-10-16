@@ -1,0 +1,34 @@
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+    *{
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+    }
+
+    .cabeza{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+
+    }
+
+
+
+    .barravertical{
+        position: fixed;
+        width: 200px;
+        height: 100%;
+
+        overflow: scroll;
+    }
+
+    .mini{
+        height: 188px;
+        width: 150px;
+        padding: 1em;
+    }
+
