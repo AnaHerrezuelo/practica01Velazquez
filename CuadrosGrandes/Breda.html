@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../estilos.css">
+    <script src="../Jquery/jquery-3.6.0.js"> </script>
 </head>
-<body>
+<body class="fondo">
 
     <div class="cabeza">
         <div> <h1> Cuadros de Velazquez </h1>  </div>
@@ -19,12 +20,10 @@
         <a href="Vulcano.html">   <img class="mini" id="minivulcano"   src="../practica01archivos/vulcano-mini.jpg"> </a>
     </aside>
 
-
-
     <main>
         <div class="contenedor">
             <div class="fotogrande">
-                <div class="fotog">  <img src="../practica01archivos/breda.jpg"> </div>
+                <div class="fotog">  <img class="imagen" src="../practica01archivos/breda.jpg"> </div>
             </div>
             <div class="texto">
                 <h1> <strong> LA RENDICIÓN DE BREDA </strong></h1><br>
@@ -32,10 +31,22 @@
                 <p> <strong> 380€</strong></p> <br>
                 <p> Réplica del cuadro en colores originales </p>
                 <br>
+                <br>
                 <input type="submit" value="Comprar" class="boton"  id="comprar" name="Comprar"/>
             </div>
         </div>
     </main>
+
+    <script>
+        $(document).ready (function(){
+            $(".imagen").click(function (){
+                /* alert("checked"); */
+                $(".fondo").css("background-color","#000000")
+                $(".fondo").html("<img src=../practica01archivos/breda.jpg>")
+            });
+        });
+    </script>
+
 </body>
 </html>
 </html>

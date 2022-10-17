@@ -34,38 +34,35 @@
         width: 150px;
         padding: 1em;
         filter: grayscale(100%);
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition:  all 0.3s;
-        transition: all 0.3s;
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+        -ms-transition: all 0.1s;
+        -o-transition:  all 0.1s;
+        transition: all 0.1s;
     }
 
     .mini:hover{
         filter: grayscale(0%);
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -ms-transition: all 0.3s;
-        -o-transition:  all 0.3s;
-        transition: all 0.3s;
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+        -ms-transition: all 0.1s;
+        -o-transition:  all 0.1s;
+        transition: all 0.1s;
 
     }
 
     .contenedor{
-        background-color: palegoldenrod;
-        height: 100vh;
+        height: 90vh;
         margin-left: 200px;
     }
 
     .fotogrande{
-        background-color: paleturquoise;
         width: 50%;
         height: 90vh;
         float: left;
     }
 
     .fotog{
-        background-color: blue;
         width: 90%;
         height: 90vh;
         float: left;
@@ -73,14 +70,23 @@
         margin-left: 5%;
     }
 
+    .imagen{
+        height: 100vh;
+        width: auto;
+        align-items: center;
+    }
+
 
 
     .texto{
-        background-color: palevioletred;
         width: 50%;
-        height: 90vh;
         float: right;
         text-align: center;
+        margin-top: 50vh;
+    }
+
+    strong{
+        font-weight: 700;
     }
 
 
@@ -92,15 +98,14 @@
         padding: 1em;
         width: 10em;
         font-weight: bold;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
     }
 
     .boton:hover{
         background-color: #04c5c0;
     }
+
+
 
 
 

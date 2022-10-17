@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Title</title>
      <link rel="stylesheet" href="../estilos.css">
+  <script src="../Jquery/jquery-3.6.0.js"> </script>
 </head>
-<body>
+<body class="fondo">
 <div class="cabeza">
   <div> <h1> Cuadros de Velazquez </h1>  </div>
 </div>
@@ -22,7 +23,7 @@
 <main>
   <div class="contenedor">
     <div class="fotogrande">
-      <div class="fotog">  <img src="../practica01archivos/inocencio.jpg"> </div>
+      <div class="fotog">  <img class="imagen" src="../practica01archivos/inocencio.jpg"> </div>
     </div>
     <div class="texto">
       <h1> <strong> PAPA INOCENCIO X </strong></h1><br>
@@ -33,6 +34,16 @@
     </div>
   </div>
 </main>
+
+    <script>
+      $(document).ready (function(){
+        $(".imagen").click(function (){
+          /* alert("checked"); */
+          $(".fondo").css("background-color","#000000")
+          $(".fondo").html("<img src=../practica01archivos/inocencio.jpg>")
+        });
+      });
+    </script>
 
 
 </body>
